@@ -1,0 +1,149 @@
+.testimotals
+    width: 100%
+    padding: 5rem 1rem
+
+    &-wrap
+        width: 100%
+        position: relative
+        max-width: 1170px
+        padding: 5rem 0 0
+        margin: 0 auto
+        text-align: center
+        background-color: #8277ed
+        border: 1px solid #8277ed
+
+        &::before
+            position: absolute
+            bottom: calc(-1em - 2vw)
+            right: 10%
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: calc(1em + 2vw) calc(1em + 2vw) 0 calc(1em + 2vw)
+            border-color: #8277ed transparent transparent transparent
+            z-index: 1
+
+        &::after
+            position: absolute
+            bottom: calc(-1em - 2vw)
+            right: 12%
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: calc(1em + 2vw) calc(1em + 2vw) 0 calc(1em + 2vw)
+            border-color: rgba(#000, .2) transparent transparent transparent
+            z-index: 0
+
+    &__title
+        color: #ffffff
+        font-size: 30px
+        font-weight: 500
+        line-height: 25px
+
+    .content
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center
+        margin: 30px 0 0
+
+        &__logo
+            width: 100%
+            max-width: 400px
+            height: 400px
+            border-radius: 30px
+            border: 3px solid #fff
+            display: flex
+            justify-content: center
+            align-items: center
+
+            @media screen and (max-width: 426px)
+                border: none
+                height: 300px
+
+            &__item
+                width: 250px
+                height: 250px
+                border-radius: 5px
+                background: #fff
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+            &-numbers
+            color: #8277ed
+            +Rubik
+            font-size: calc(1em + .5vw)
+            font-weight: 500
+            line-height: 25px
+
+            &-desc
+                color: #898989
+                +Rubik
+                font-size: 13px
+                font-weight: 500
+                line-height: 25px
+                text-transform: uppercase
+
+            &-text
+                color: #aeaeae
+                font-family: "Source Sans Pro"
+                font-size: 14px
+                font-weight: 400
+                line-height: 24px
+                letter-spacing: 0.28px   
+
+        &__scrollbar
+            width: 100%
+            margin-top: 25px
+            max-width: 600px
+            padding: 10px
+            height: 650px
+            overflow-y: scroll
+
+    .comment 
+        max-width: 570px
+        width: 100%
+        margin: 20px 0
+        display: flex
+        align-items: flex-start
+
+        &__logo
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            background: gray
+       
+        &__text
+           width: 100%
+           max-width: 446px
+           text-align: start
+           margin: 0 15px
+
+        & p
+            margin: 15px 0
+            color: #ffffff
+            +SourceSansPro
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: 0.28px
+
+        & h5
+            color: #d6d2ff
+            +SourceSansPro
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: 0.28px
+
+        & h4
+            color: #ffffff
+            +Rubik
+            font-size: 14px
+            font-weight: 700
+            line-height: 25px
+            text-transform: uppercase

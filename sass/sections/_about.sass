@@ -1,0 +1,184 @@
+.about
+    width: 100%
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1)
+    background-color: #f0f0f0
+
+    &-wrap
+        width: 100%
+        max-width: 1170px
+        margin: 0 auto
+
+    &__top
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        justify-content: 
+        margin-top: -75px
+        position: relative
+        z-index: 2
+
+       
+        &__item
+            width: 100%
+            max-width: 370px
+            height: 166px
+            margin: 30px 10px
+            padding: 20px
+            box-shadow: 0 5px 43px rgba(0, 0, 0, 0.26)
+            display: flex
+            justify-content: center
+            align-items: center
+
+            &:nth-child(1)
+                background-color: #8277ed
+                color: #b8b1ff
+
+            &:nth-child(2)
+                background-color: #858eed
+                color: #b8b1ff
+
+            &:nth-child(3)
+                background-color: #86b0f5
+                color: #ffffff
+
+
+        &__item img
+            display: inline-block
+            width: 100%
+            max-width: 84px
+            height: auto
+            margin: 0 10px
+
+        .to-bot
+            margin-bottom: -50px
+            
+        .to-top
+            margin-top: -50px
+
+        @media screen and (max-width: 1024px)
+
+            .to-top
+                margin: 10px
+
+            .to-bot
+                margin: 10px
+
+
+        .item__text
+            display: inline-block
+            margin: 0 5px
+            h3
+                height: 10px
+                color: #ffffff
+                font-family: Rubik
+                font-size: 14px
+                font-weight: 500
+                line-height: 25px
+                text-transform: uppercase
+
+            p   
+                width: 100%
+                max-width: 199px
+                height: 61px
+                +SourceSansPro
+                font-size: 14px
+                font-weight: 400
+                line-height: 24px
+                letter-spacing: 0.28px
+
+       
+
+    &__main
+        display: flex
+        padding: 50px 25px
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center
+
+        &__text
+            max-width: 487px
+            width: 100%
+
+            &-item
+                margin: 15px 10px
+                line-height: 24px
+                letter-spacing: 0.28px
+
+                h2
+                    display: inline-block
+                    margin: 0 10px
+
+        .about-title
+            color: #040404
+            +Rubik
+            font-size: 30px
+            font-weight: 500
+            line-height: 25px
+
+        .about-subtitle
+            color: #909090
+
+        p
+            color: #aeaeae
+            +SourceSansPro
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: 0.28px
+
+        .about-author
+            display: flex
+            justify-content: flex-start
+            align-items: center
+
+            &__item
+                margin: 10px
+
+            .author-name
+                color: #909090
+                font-weight: 500
+
+        &__statistic
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            width: 100%
+            max-width: 600px
+
+        .statistic-item
+            width: 100%
+            max-width: 184px
+            min-height: 220px
+            margin: 25px 50px
+
+        .statistic-item img
+            display: block
+            margin: 0 auto
+
+        .statistic-item p
+            margin: 10px
+
+        .statistic-item-humbers
+            color: #8277ed
+            +Rubik
+            font-size: calc(1em + .5vw)
+            font-weight: 500
+            line-height: 25px
+
+        .statistic-item-desc
+            color: #898989
+            +Rubik
+            font-size: 13px
+            font-weight: 500
+            line-height: 25px
+            text-transform: uppercase
+
+        .statistic-item-text
+            color: #aeaeae
+            font-family: "Source Sans Pro"
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: 0.28px

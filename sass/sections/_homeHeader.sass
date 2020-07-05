@@ -1,0 +1,240 @@
+.header
+    width: 100%
+    position: relative
+    background: url('../img/lifepharma5.jpg') no-repeat center center
+    background-size: cover
+
+    &-background
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(45deg, #6055c6 0%, rgba(0, 0, 0, .75) 100%)
+        z-index: 1
+
+    &-wrap
+        max-width: 1170px
+        position: relative
+        height: 100%
+        margin: 0 auto
+        padding: 0 15px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        z-index: 2
+
+.navbar
+    width: 100%
+    
+    &__logo
+        color: #ffffff
+        font-family: 'Quantify', sans serif
+        font-size: 30px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.6px
+
+    &__top
+        width: 100%
+        padding: 10px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        border-bottom: 1px solid rgba(#ffffff, .1)
+
+    &__bottom
+        padding: 10px 5px
+        display: flex
+        align-items: center
+
+    &__bottom li
+        margin: 15px
+       
+    &__bottom a
+        color: #ffffff
+        font-size: 14px
+        font-weight: 500
+        line-height: 24px
+        text-transform: uppercase
+        letter-spacing: 0.28px
+
+
+    &__date
+        width: 200px
+        color: #ffffff
+        font-size: 12px
+        font-weight: 500
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 0.48px
+        margin: 15px 30px
+        text-align: center
+    &__socials
+        max-width: 233px
+
+    &__socials li
+        margin: 15px 10px
+
+    &__search, &__profile, &__shop
+        display: inline-block
+        margin: 15px 30px
+
+@media screen and (max-width: 1024px)
+    .navbar
+
+        display: none
+
+        &__top
+            justify-content: center
+            align-items: center
+
+        &__bottom
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+
+.menu-icon
+
+    position: absolute
+    top: 25px
+    right: 25px
+    width: 25px
+    height: 25px
+    z-index: 10
+    cursor: pointer
+    display: none
+
+    @media screen and (max-width: 1024px) 
+        & 
+            display: flex
+            justify-content: center
+            align-items: center
+        
+    
+
+    &-line 
+        position: relative
+        width: 25px
+        height: 3px
+        background-color: #fff
+    
+
+    &-line::before 
+        position: absolute
+        left: 0
+        top: -10px
+        content: ''
+        width: 25px
+        height: 3px
+        background-color: #fff
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+
+    &-line::after 
+        position: absolute
+        left: 0
+        top: 10px
+        content: ''
+        width: 25px
+        height: 3px
+        background-color: #fff
+        transition: transform .2s ease-in, top .2s linear .2s
+        
+
+    &.menu-icon-active &-line 
+        background-color: transparent
+
+
+    &.menu-icon-active &-line::before 
+        transform: rotate(45deg)
+        top: 0
+        transition: top .2s linear, transform .2s ease-in .2s
+
+    &.menu-icon-active &-line::after 
+        transform: rotate(-45deg)
+        top: 0
+        transition: top .2s linear, transform .2s ease-in .2s
+
+
+.hero
+    width: 100%
+    max-width: 921px
+    height: 650px
+    margin-top: 154px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    color: #ffffff
+
+    &-wrap
+        width: 100%
+        max-width: 600px
+
+    .hero__text-item
+        margin: 15px
+
+    .p1
+        +SourceSansPro
+        font-size: 20px
+        font-weight: 400
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 2px
+
+    .p2
+        +SourceSansPro
+        font-size: 16px
+        font-weight: 300
+        line-height: 25px
+        letter-spacing: 0.32px
+
+    h2  
+        width: 100%
+        max-width: 507px
+        color: #ffffff
+        +Rubik
+        font-weight: 400
+        text-transform: uppercase
+
+    .professional
+        font-size: calc(1em + 1.5vw)
+        font-weight: 700
+        letter-spacing: 1.04px
+
+    .medical
+        font-size: calc(1em + 1vw)
+        font-weight: 400
+        letter-spacing: 1.04px
+
+    .btn-details
+        display: inline-block
+        padding: 10px 30px
+        border-radius: 23px
+        background-color: #ffffff
+        color: #8277ed
+        +SourceSansPro
+        font-size: 14px
+        font-weight: 700
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 0.56px
+        
+        &:hover
+            background: #F0F0F0
+    
+
+.shape 
+    width: 100%
+    position: relative
+    margin-top: -200px
+    height: 309px
+    z-index: 2
+    background: url('../img/shape.png') no-repeat center
+    background-size: cover
