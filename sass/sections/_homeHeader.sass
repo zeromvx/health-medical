@@ -4,16 +4,17 @@
     background: url('../img/lifepharma5.jpg') no-repeat center center
     background-size: cover
 
-    &-background
-        position: absolute
-        left: 0
-        right: 0
-        top: 0
-        bottom: 0
-        width: 100%
-        height: 100%
-        background-image: linear-gradient(45deg, #6055c6 0%, rgba(0, 0, 0, .75) 100%)
-        z-index: 1
+    &::before
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            width: 100%
+            height: 100%
+            background-image: linear-gradient(45deg, #6055c6 0%, rgba(0, 0, 0, .75) 100%)
+            z-index: 1
 
     &-wrap
         max-width: 1170px
@@ -79,10 +80,6 @@
 
     &__socials li
         margin: 15px 10px
-
-    &__search, &__profile, &__shop
-        display: inline-block
-        margin: 15px 30px
 
 @media screen and (max-width: 1024px)
     .navbar
