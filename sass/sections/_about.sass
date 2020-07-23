@@ -4,180 +4,170 @@
     background-color: #f0f0f0
 
     &-wrap
+        margin: 0 auto
         width: 100%
         max-width: 1170px
-        margin: 0 auto
 
-    &__top
-        width: 100%
+.about-top
+    z-index: 2
+    position: relative
+    margin-top: -75px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    width: 100%
+
+    &__item
+        margin: 30px 10px
+        padding: 20px
         display: flex
-        flex-wrap: wrap
         justify-content: center
         align-items: center
-        justify-content: 
-        margin-top: -75px
-        position: relative
-        z-index: 2
+        width: 100%
+        max-width: 370px
+        height: 166px
+        box-shadow: 0 5px 43px rgba(0, 0, 0, 0.26)
 
-       
-        &__item
-            width: 100%
-            max-width: 370px
-            height: 166px
-            margin: 30px 10px
-            padding: 20px
-            box-shadow: 0 5px 43px rgba(0, 0, 0, 0.26)
-            display: flex
-            justify-content: center
-            align-items: center
+        &:nth-child(1)
+            background-color: #8277ed
+            color: #b8b1ff
 
-            &:nth-child(1)
-                background-color: #8277ed
-                color: #b8b1ff
+        &:nth-child(2)
+            background-color: #858eed
+            color: #b8b1ff
 
-            &:nth-child(2)
-                background-color: #858eed
-                color: #b8b1ff
+        &:nth-child(3)
+            background-color: #86b0f5
+            color: #ffffff
 
-            &:nth-child(3)
-                background-color: #86b0f5
-                color: #ffffff
+    &__image
+        margin: 0 10px
+        display: inline-block
+        width: 100%
+        max-width: 84px
+        height: auto
 
+    &__text
+        display: inline-block
+        margin: 0 5px
 
-        &__item img
-            display: inline-block
-            width: 100%
-            max-width: 84px
-            height: auto
+    &__title
+        color: #ffffff
+        font-size: 14px
+        font-weight: 500
+        line-height: 25px
+        text-transform: uppercase
+
+    &__descr
+        width: 100%
+        max-width: 199px
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.28px
+
+.about-content
+    padding: 50px 25px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+
+    &__text
+        width: 100%
+        max-width: 487px 
+
+    &__item
+        padding: 1rem 0
+        line-height: 24px
+        letter-spacing: 0.28px
+
+        h2
             margin: 0 10px
-
-        .to-bot
-            margin-bottom: -50px
-            
-        .to-top
-            margin-top: -50px
-
-        @media screen and (max-width: 1024px)
-
-            .to-top
-                margin: 10px
-
-            .to-bot
-                margin: 10px
-
-
-        .item__text
             display: inline-block
-            margin: 0 5px
 
-            h3
-                color: #ffffff
-                font-family: Rubik
-                font-size: 14px
-                font-weight: 500
-                line-height: 25px
-                text-transform: uppercase
+    &__title
+        color: #040404
+        font-size: 30px
+        font-weight: 500
+        line-height: 25px
 
-            p   
-                width: 100%
-                max-width: 199px
-                +SourceSansPro
-                font-size: 14px
-                font-weight: 400
-                line-height: 24px
-                letter-spacing: 0.28px
+    &__subtitle
+        color: #909090
 
-       
+    &__paragraph
+        color: #aeaeae
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.28px
 
-    &__content
-        display: flex
-        padding: 50px 25px
-        flex-wrap: wrap
-        justify-content: space-around
-        align-items: center
+.about-author
+    display: flex
+    justify-content: flex-start
+    align-items: center
 
-        &__text
-            max-width: 487px
-            width: 100%
+    &__logo
+        border-radius: 50%
+        width: 65px
+        height: 65px
+        background: #cccccc
 
-            &-item
-                padding: 1rem 0
-                line-height: 24px
-                letter-spacing: 0.28px
+    &__item
+        margin: 10px
 
-                h2
-                    display: inline-block
-                    margin: 0 10px
+    &__name
+        color: #909090
+        font-weight: 500
 
-        .about-title
-            color: #040404
-            +Rubik
-            font-size: 30px
-            font-weight: 500
-            line-height: 25px
+.statistic
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    width: 100%
+    max-width: 600px
 
-        .about-subtitle
-            color: #909090
+    &__item
+        margin: 25px 50px
+        width: 100%
+        max-width: 184px
+        text-align: center
 
-        p
-            color: #aeaeae
-            +SourceSansPro
-            font-size: 14px
-            font-weight: 400
-            line-height: 24px
-            letter-spacing: 0.28px
+    &__logo
+        margin: 0 auto
+        position: relative
+        border-radius: 50%
+        width: 65px
+        height: 65px
 
-        .about-author
-            display: flex
-            justify-content: flex-start
-            align-items: center
-
-            &__item
-                margin: 10px
-
-            .author-name
-                color: #909090
-                font-weight: 500
-
-        &__statistic
-            display: flex
-            flex-wrap: wrap
-            justify-content: center
-            width: 100%
-            max-width: 600px
-
-        .statistic-item
-            width: 100%
-            max-width: 184px
-            min-height: 220px
-            margin: 25px 50px
-
-        .statistic-item img
-            display: block
-            margin: 0 auto
-
-        .statistic-item p
-            margin: 10px
-
-        .statistic-item-humbers
+        .fa
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%);
             color: #8277ed
-            +Rubik
-            font-size: calc(1em + .5vw)
-            font-weight: 500
-            line-height: 25px
 
-        .statistic-item-desc
-            color: #898989
-            +Rubik
-            font-size: 13px
-            font-weight: 500
-            line-height: 25px
-            text-transform: uppercase
+    & p
+        margin: 10px
 
-        .statistic-item-text
-            color: #aeaeae
-            font-family: "Source Sans Pro"
-            font-size: 14px
-            font-weight: 400
-            line-height: 24px
-            letter-spacing: 0.28px
+    &__numbers
+        color: #8277ed
+        font-size: calc(1em + .5vw)
+        font-weight: 500
+        line-height: 25px
+
+    &__desc
+        color: #898989
+        font-size: 13px
+        font-weight: 500
+        line-height: 25px
+        text-transform: uppercase
+
+    &__text
+        color: #aeaeae
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.28px
+
